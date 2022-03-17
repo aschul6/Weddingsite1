@@ -1,0 +1,196 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* -----default style ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*-- border: red solid 1px; --*/
+}
+*:not(i){
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+:before, :after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+header, section, footer {
+    display: block;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+/* ----- header ----- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.header .logo {
+    padding: 25px;
+    margin: 30px 10px;
+    border: .1em solid rgb(196, 155, 93);
+}
+.header .logo a{
+    font-size: 42px;
+    color: #0F3146;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+}
+.header[class="main"]{
+    text-transform: none;
+}
+.header .logo a:hover {
+    color: rgb(63, 0, 92);
+}
+.header .menu {
+    padding: 0 10px;
+}
+.header .menu ul,
+.header .menu ul li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+.header .menu ul li a {
+    flex-direction: row;
+    padding: 10px;
+    color: #0F3146;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:color 0.5s ease;
+}
+.header .menu a:hover {
+    color: rgb(167, 3, 98);
+}
+
+/* ----- Main Content Area ----- */
+
+.storytime {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 90%;
+    align-self: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.pagetitle {
+    margin: 20px;
+}
+
+/* ----- Timeline ----- */
+
+/* Outsider */
+
+.outsider {
+    width: 100%;
+    border-top: 15px solid #66004A;
+    border-bottom: 15px solid #66004A;
+}
+
+
+/* Form Section */
+
+.form {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-top: 5px solid #66004A;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0A6E79;
+    flex: 1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.footer .logo {
+    padding: 10px;
+    border: .1em solid rgb(196, 155, 93);
+    align-self: center;
+}
+.footer .logo a{
+    align-self: center;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+}
+.footer[class="main"]{
+    text-transform: none;
+}
+.footer .logo a:hover {
+    color: rgb(63, 0, 92);
+}
+.dkblue {
+    width: 100%;
+    background-color: #0F3146;
+    flex: 1;
+}
+.footer .menu {
+    padding: 10px;
+}
+.footer .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.footer .menu ul li a {
+    flex-direction: row;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:color 0.5s ease;
+}
+.footer .menu a:hover {
+    color: rgb(167, 3, 98);
+}
+
+/* ---- Media Queries ----- */
+
