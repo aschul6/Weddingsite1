@@ -1,4 +1,90 @@
-/* Fonts */
+/* -------- Fonts --------- */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* -------- Default styles --------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: red solid 2px;*/
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+header, section, footer {
+    width: 100%;
+}
+
+/* -------- Header --------- */
+
+header, footer {
+    text-align: center;
+    margin: 0 auto;
+}
+header {
+    padding-top: 20px;
+}
+.logo {
+    margin: 20px;
+}
+
+.logo a {
+    padding: 15px;
+    border: .1em solid rgb(196, 155, 93);
+    margin: 20px;
+}
+
+.header .container,
+.header .menu,
+.header.menu ul,
+.header .menu ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px 5px;
+    margin-bottom: 5px;
+}
+
+.menu ul li,
+.menu ul li a {
+    background-color: #023041;
+    flex-wrap: nowrap;
+    margin: 2px;
+    color: #fff;
+}
+
+/* -------- Footer --------- */
+
+.footer {
+    background-color: #0A6E79;
+    margin-top: 0;
+    padding: 0;
+}
+
+.dkblue .logo {
+    display: none;
+}
+
+.footer .menu,
+.footer .menu ul,
+.footer .menu ul li {
+    margin: 10px 5px;
+    list-style: none;
+    color: #fff;
+}
