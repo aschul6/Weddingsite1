@@ -41,12 +41,17 @@ header {
 }
 .logo {
     margin: 20px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: #66004A;
+    font-size: 30px;
 }
 
 .logo a {
     padding: 15px;
     border: .1em solid rgb(196, 155, 93);
     margin: 20px;
+    color: #66004A;
 }
 
 .header .container,

@@ -41,12 +41,17 @@ header {
 }
 .logo {
     margin: 20px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: #66004A;
+    font-size: 30px;
 }
 
 .logo a {
     padding: 15px;
     border: .1em solid rgb(196, 155, 93);
     margin: 20px;
+    color: #66004A;
 }
 
 .header .container,
@@ -105,10 +110,11 @@ header {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    opacity: 0.90;
 }
 .home-content {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
