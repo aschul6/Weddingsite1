@@ -13,11 +13,10 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-size: 16px;
+    width: 100%;
 }
 img {
     max-width: 100%;
@@ -26,15 +25,20 @@ img {
 a {
     text-decoration: none;
 }
-header, section, footer {
+header, 
+section,
+footer {
     width: 100%;
 }
 
 /* -------- Header --------- */
 
-header, footer {
+header, 
+footer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
 }
 header {
     padding-top: 20px;
@@ -46,14 +50,12 @@ header {
     color: #66004A;
     font-size: 30px;
 }
-
 .logo a {
     padding: 15px;
     border: .1em solid rgb(196, 155, 93);
     margin: 20px;
     color: #66004A;
 }
-
 .header .container,
 .header .menu,
 .header.menu ul,
@@ -62,10 +64,8 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin: 10px 5px;
     margin-bottom: 5px;
 }
-
 .menu ul li,
 .menu ul li a {
     background-color: #023041;
@@ -73,6 +73,16 @@ header {
     margin: 2px;
     color: #fff;
 }
+
+/* -------- Lovestory Content --------- */
+
+/* -------- Deets Content --------- */
+
+/* -------- BridalParty Content --------- */
+
+/* -------- Registries Content --------- */
+
+/* -------- RSVP Content --------- */
 
 /* -------- Footer --------- */
 
