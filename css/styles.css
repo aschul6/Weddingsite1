@@ -90,18 +90,18 @@ header {
     display: none;
 }
 
-.slide,
-.home-content,
-.home-content p,
-.home-content h1,
-.home-content span {
+.happy,
+.home-stuff,
+.home-stuff p,
+.home-stuff h1,
+.home-stuff span {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
 }
-.slide {
+.happy {
     padding-top: 2px;
     padding-bottom: 0;
     width: 100%;
@@ -112,7 +112,7 @@ header {
     margin: 0 auto;
     opacity: 0.90;
 }
-.home-content {
+.home-stuff {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -120,7 +120,7 @@ header {
     color: #ffffff;
     text-align: center;
 }
-.home-content h1 {
+.home-stuff h1 {
     font-family: 'Lobster', cursive;
     font-size: 30px;
 }
@@ -146,97 +146,63 @@ header {
 }
 
 /* Media Queries */
-@media screen and (min-width:'769px') {
-    /* Home section */
-    .home-section {
+@media screen and (min-width: 769px) {
+    *:not(i){
+        font-family: 'Roboto', sans-serif;
+    }
+    body {
         margin: 0;
-        height: 100vh;
-        position: relative;
-        border-top: 15px solid #66004A;
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 auto;
     }
-    .home-section .slide {
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        width: 100%;
-        max-height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 1s ease-in-out;
-        margin: 0;
+    :before, :after {
+        box-sizing: border-box;
     }
-    .home-section .slide.active {
-        opacity: 1;
-        visibility: visible;
-    }
-    .home-section .slide:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.4);
-        z-index: -1;
-        margin: 0;
-    }
-    .home-section .row {
-        min-height: 100vh;
-    }
-    .home-section .home-content {
-        flex: 0 0 100%;
-        margin: 0;
+    img {
         max-width: 100%;
-        padding: 0 15px;
-        text-align: center;
+        vertical-align: middle;
     }
-    .home-section .slide.active .home-content p{
-        opacity: 0;
-        animation: fadeInTop 1s ease forwards;
+    a {
+        text-decoration: none;
     }
-    @keyframes fadeInTop {
-        0%{
-            transform: translateY(-50px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0px);
-        }
+    header, section, footer {
+        display: block;
+        width: 100%;
     }
-    .home-section .home-content p {
-        font-size: 24px;
-        color: #ffffff;
-        margin: 0 0 15px;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .home-section .home-content h1 {
-        font-size: 80px;
-        color: #ffffff;
-        margin: 0;
-        font-family: 'Lobster', cursive;
+    .justify-content-between {
+        justify-content: space-between;
     }
-    .home-section .slide.active .home-content h1{
-        opacity: 0;
-        animation: fadeInTop 1s ease forwards;
-        animation-delay: 0.5s;
+    .align-items-center {
+        align-items: center;
     }
-    .home-section .home-content span {
-        padding: 7px 30px;
-        font-size: 20px;
-        display: inline-block;
-        border: 1px solid #0A6E79;
-        border-radius: 30px;
-        color: #ffffff; 
-        margin: 0;
-    }
-    .home-section .slide.active .home-content span{
-        opacity: 0;
-        animation: fadeInTop 1s ease forwards;
-        animation-delay: 1s;
-    }
-}
-
-@media screen and (max-width:'1024px') {
+    
     /* Home section */
+    .home-section,
+    .home-section .slide,
+    .home-section .row,
+    .home-section .home-content,
+    .home-section .home-content p,
+    .home-section .home-content h1,
+    .home-section .home-content span,
+    .home-section .slide.active .home-content h1,
+    .home-section .slide.active .home-content span, 
+    .home-section .slide.active .home-content p {
+        display: block;
+    }
+    .happy,
+    .homeimage,
+    .home-stuff,
+    .home-stuff h1,
+    .home-stuff p,
+    .home-stuff span {
+        display: none;
+    }
     .home-section {
         margin: 0;
         height: 100vh;
@@ -255,10 +221,9 @@ header {
         margin: 0;
     }
     .home-section .slide.active {
-        opacity: 1;
+        opacity: 0.75;
         visibility: visible;
     }
-
     .home-section .slide:before {
         content: '';
         position: absolute;
