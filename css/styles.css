@@ -39,8 +39,10 @@ header, footer {
 header {
     padding-top: 20px;
 }
-.logo {
+.logo,
+.logo a {
     margin: 20px;
+    padding: 10px;
     font-family: 'Lobster', cursive;
     text-decoration: none;
     color: #66004A;
@@ -48,10 +50,8 @@ header {
 }
 
 .logo a {
-    padding: 15px;
+    padding: 20px;
     border: .1em solid rgb(196, 155, 93);
-    margin: 20px;
-    color: #66004A;
 }
 
 .header .container,
@@ -168,7 +168,6 @@ header {
         text-decoration: none;
     }
     header, section, footer {
-        display: block;
         width: 100%;
     }
     .row {
@@ -181,6 +180,45 @@ header {
     .align-items-center {
         align-items: center;
     }
+
+    /* -------- Header --------- */
+
+    header,
+    .header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu,
+    .menu ul,
+    .menu ul li,
+    .menu ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header .menu ul li,
+    header .menu ul li a {
+        background-color: transparent;
+        color: #023041;
+    }
+
+    .logo,
+    .logo a {
+        margin: 20px;
+        padding: 10px;
+        font-family: 'Lobster', cursive;
+        text-decoration: none;
+        color: #66004A;
+        font-size: 30px;
+    }
+    
+    .logo a {
+        padding: 20px;
+        border: .1em solid rgb(196, 155, 93);
+    }
+
     
     /* Home section */
     .home-section,
@@ -287,5 +325,63 @@ header {
         opacity: 0;
         animation: fadeInTop 1s ease forwards;
         animation-delay: 1s;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    header,
+    .header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu,
+    .menu ul,
+    .menu ul li,
+    .menu ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header .menu ul li,
+    header .menu ul li a {
+        background-color: transparent;
+        color: #023041;
+    }
+
+    .logo,
+    .logo a {
+        margin: 20px;
+        padding: 10px;
+        font-family: 'Lobster', cursive;
+        text-decoration: none;
+        color: #66004A;
+        font-size: 30px;
+    }
+    
+    .logo a {
+        padding: 20px;
+        border: .1em solid rgb(196, 155, 93);
+    }
+
+    /* -------- Footer --------- */
+
+    .footer {
+        background-color: #0A6E79;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dkblue .logo {
+        display: none;
+    }
+
+    .footer .menu,
+    .footer .menu ul,
+    .footer .menu ul li {
+        margin: 10px 5px;
+        list-style: none;
+        color: #fff;
     }
 }
