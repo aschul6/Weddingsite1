@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: red solid 2px;*/
+    border: red solid 2px;
 }
 body {
     display: flex;
@@ -100,6 +100,7 @@ header {
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
+    padding: 0;
 }
 .happy {
     padding-top: 2px;
@@ -123,6 +124,9 @@ header {
 .home-stuff h1 {
     font-family: 'Lobster', cursive;
     font-size: 30px;
+}
+.home-stuff span {
+    padding: 0;
 }
 
 /* -------- Footer --------- */
@@ -151,11 +155,10 @@ header {
         font-family: 'Roboto', sans-serif;
     }
     body {
-        margin: 0;
+        margin: 0 auto;
         line-height: 1.5;
         font-size: 16px;
         font-weight: 400;
-        margin: 0 auto;
     }
     :before, :after {
         box-sizing: border-box;
@@ -313,7 +316,7 @@ header {
         animation-delay: 0.5s;
     }
     .home-section .home-content span {
-        padding: 7px 30px;
+        padding: 5px;
         font-size: 20px;
         display: inline-block;
         border: 1px solid #0A6E79;
@@ -323,10 +326,30 @@ header {
     }
     .home-section .slide.active .home-content span{
         opacity: 0;
+        padding: 0;
         animation: fadeInTop 1s ease forwards;
         animation-delay: 1s;
     }
+    /* -------- Footer --------- */
 
+    .footer {
+        background-color: #0A6E79;
+    }
+
+    .dkblue .logo {
+        display: none;
+    }
+
+    .footer .menu,
+    .footer .menu ul,
+    .footer .menu ul li {
+        list-style: none;
+        color: #fff;
+    }
+    footer .menu ul li,
+    footer .menu ul li a {
+        background-color: transparent;
+    }
 }
 @media screen and (min-width: 1024px) {
     header,
@@ -369,8 +392,6 @@ header {
 
     .footer {
         background-color: #0A6E79;
-        margin-top: 0;
-        padding: 0;
     }
 
     .dkblue .logo {
@@ -380,7 +401,6 @@ header {
     .footer .menu,
     .footer .menu ul,
     .footer .menu ul li {
-        margin: 10px 5px;
         list-style: none;
         color: #fff;
     }
