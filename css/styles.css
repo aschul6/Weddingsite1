@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: red solid 2px;
+    /*border: red solid 2px;*/
 }
 body {
     display: flex;
